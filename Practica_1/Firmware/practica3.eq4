@@ -1,0 +1,61 @@
+ispLEVER Classic 2.0.00.17.20.15 Linked Equations File
+Copyright(C), 1992-2015, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design practica3 created Sun Sep 01 12:54:05 2019
+
+Title: practica3.bls 
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   4/4        3        1    Pin   EXOR 
+   1/3        3        1    Pin   OR 
+   3/1        3        1    Pin-  NOR 
+   3/1        3        1    Pin-  NAND 
+   1/3        3        1    Pin   AND 
+=========
+  12/12         Best P-Term Total: 8
+                       Total Pins: 8
+                      Total Nodes: 0
+            Average P-Term/Output: 1
+
+
+Equations:
+
+EXOR = (C & B & A
+     # !C & !B & A
+     # !C & B & !A
+     # C & !B & !A);
+
+OR = (!C & !B & !A);
+
+NOR = (C
+     # B
+     # A);
+
+NAND = (!C
+     # !B
+     # !A);
+
+AND = (C & B & A);
+
+
+Reverse-Polarity Equations:
+
+!EXOR = (!C & B & A
+     # C & !B & A
+     # C & B & !A
+     # !C & !B & !A);
+
+!OR = (C
+     # B
+     # A);
+
+!NOR = (!C & !B & !A);
+
+!NAND = (C & B & A);
+
+!AND = (!C
+     # !B
+     # !A);
+

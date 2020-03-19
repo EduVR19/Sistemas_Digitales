@@ -1,0 +1,21 @@
+Simulate ispLEVER Classic 2.0.00.17.20.15  Date: Sun Sep 01 14:37:52 2019
+Fuse file: 'Practica3.jed'  Vector file: 'Practica3.jed'  Part: 'P22V10G'
+ispLEVER Classic 2.0.00.17.20.15 Lattice Semiconductor Corp.
+JEDEC file for: P22V10G V9.0
+Created on: Sun Sep 01 14:37:50 2019
+
+practica3.bls 
+
+
+       C B A
+            
+V0001  0 0 0
+V0002  1 0 0
+V0003  0 1 0
+V0004  1 1 0
+V0005  0 0 1
+V0006  1 0 1
+V0007  0 1 1
+V0008  1 1 1
+
+8 out of 8 vectors passed.

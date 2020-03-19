@@ -1,0 +1,16 @@
+module ejemplo
+"Entradas
+A,B,C pin;
+"Salidas
+AND, NAND, OR, NOR, EXOR pin istype 'com';
+test_vectors
+([A,B,C]->[AND,NAND,OR,NOR,EXOR])
+[0,0,0]->[.X.,.X.,.X.,.X.,.X.];
+[0,0,1]->[.X.,.X.,.X.,.X.,.X.];
+[0,1,0]->[.X.,.X.,.X.,.X.,.X.];
+[0,1,1]->[.X.,.X.,.X.,.X.,.X.];
+[1,0,0]->[.X.,.X.,.X.,.X.,.X.];
+[1,0,1]->[.X.,.X.,.X.,.X.,.X.];
+[1,1,0]->[.X.,.X.,.X.,.X.,.X.];
+[1,1,1]->[.X.,.X.,.X.,.X.,.X.];
+end

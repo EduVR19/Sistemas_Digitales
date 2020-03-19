@@ -1,0 +1,19 @@
+#$ TOOL SCH2BLF 2.0.00.17 
+#$ TITLE practica3.bls 
+#$ MODULE practica3 
+#$ PINS 8  NOR OR EXOR NAND AND C B A
+#$ NODES 1 N_1 
+#$ INTERFACE g_3and 4 A'i' B'i' C'i' Y'o'
+#$ INTERFACE g_3nand 4 A'i' B'i' C'i' YN'o'
+#$ INTERFACE g_3nor 4 A'i' B'i' C'i' YN'o'
+#$ INTERFACE g_3or 4 A'i' B'i' C'i' Y'o'
+#$ INTERFACE g_xor 3 A'i' B'i' Y'o'
+#$ PRIMITIVE I6 g_3and 4 C B A AND
+#$ PRIMITIVE I5 g_3nand 4 C A B NAND
+#$ PRIMITIVE I1 g_3nor 4 C A B NOR
+#$ PRIMITIVE I2 g_3or 4 A B C OR
+#$ PRIMITIVE I3 g_xor 3 N_1 C EXOR
+#$ PRIMITIVE I4 g_xor 3 A B N_1
+.model practica3
+
+.end

@@ -1,0 +1,41 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Sun Sep 01 14:37:44 2019
+#$ TITLE practica3.bls 
+#$ MODULE practica3
+#$ PINS 8 NOR'o'  OR'o'  EXOR'o'  NAND'o'  AND'o'  C B A
+#$ NODES 1 N_1'o' 
+
+.model practica3
+.inputs C.BLIF B.BLIF A.BLIF N_1.BLIF
+.outputs AND NAND NOR OR EXOR N_1
+.names A.BLIF B.BLIF C.BLIF AND
+111 1
+-0- 0
+0-- 0
+--0 0
+.names B.BLIF A.BLIF C.BLIF NAND
+-0- 1
+0-- 1
+--0 1
+111 0
+.names B.BLIF A.BLIF C.BLIF NOR
+000 1
+-1- 0
+1-- 0
+--1 0
+.names C.BLIF B.BLIF A.BLIF OR
+-1- 1
+1-- 1
+--1 1
+000 0
+.names N_1.BLIF C.BLIF EXOR
+10 1
+01 1
+00 0
+11 0
+.names A.BLIF B.BLIF N_1
+10 1
+01 1
+00 0
+11 0
+.end

@@ -1,0 +1,20 @@
+.LOG
+
+10:20 p. m. 31/08/2019
+1.-Crear el propyecto con Schematic/ABEL
+2.-Elegimos:
+    -Familia: GAL Device
+    -Device:GAL22V10D
+    -24PDIP
+3.-Crear una nueva fuente con schematic y le asignamos un nombre
+4.-En el esquemático insertamos:
+    -3AND
+    -3NAND
+    -3OR
+    -3NOR
+    -2 DE 2EXOR (Propiedad asociativa)
+5.-Asignar nombres a las variables y señalar las entradas y salidas
+   
+10:59 a. m. 01/09/2019
+
+6.-

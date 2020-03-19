@@ -1,0 +1,28 @@
+#$ TOOL ispLEVER Classic 2.0.00.17.20.15
+#$ DATE Sun Sep 01 14:37:44 2019
+#$ TITLE practica3.bls 
+#$ MODULE practica3
+#$ DEVICE p22v10g
+#$ PINS 8 NOR+:22 OR-:14 EXOR+:23 NAND-:15 AND+:21 C:1 B:2 A:3
+.i 3 
+.o 5 
+.type fr
+.ilb C B A
+.ob AND NAND NOR OR EXOR
+.phase 11111
+.p 14
+1-- ~~01~
+0-- 01~~~
+-1- ~~01~
+-0- 01~~~
+--1 ~~01~
+111 10~~1
+001 ~~~~1
+--0 01~~~
+010 ~~~~1
+100 ~~~~1
+000 ~~100
+011 ~~~~0
+101 ~~~~0
+110 ~~~~0
+.e

@@ -1,0 +1,12 @@
+JDF B
+// Created by Version 2.0 
+PROJECT Practica3
+DESIGN practica3 Normal
+DEVKIT GAL22V10D-10LP
+ENTRY ABEL/Schematic
+STIMULUS practica3(testvector).abv
+MODULE practica3.sch
+MODSTYLE practica3 Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE practica3
